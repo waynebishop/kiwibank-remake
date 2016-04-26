@@ -64,6 +64,42 @@ nav ul {
 	padding-left: 0;
 }
 
+#hero {
+	background-color: #333333;
+	padding-top: 200px;
+	background-image: url(http://placehold.it/400x300);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 1346px;
+	margin: 0 auto;
+}
+
+#hero > p {
+	background-color: #ffffff;
+	display: inline-block;
+	padding: 10px;
+	float: right;
+}
+
+#hero div {
+	background-color: inherit;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+
+#hero a {
+	background-color: #fff;
+	padding: 10px;
+	color: #1b9dcf;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#hero button {
+	display: none;
+}
 
 
 
@@ -73,6 +109,8 @@ nav ul {
 
 
 
+
+/* 600px */
 
 @media all and (min-width: 600px) {
 
@@ -83,7 +121,7 @@ nav ul {
 
 
 
-
+/* 720 px */
 
 @media all and (min-width: 720px) {
 
@@ -129,7 +167,35 @@ nav ul {
 		display: none;
 	}	
 
+	#hero {
+		position: relative;
+		background-size: auto;
+		background-position: right;
+
+	}
+
+	#hero div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 300px;
+
+	}
+
+	#hero:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	#hero > p {
+		margin-bottom: 0;
+	}
+
 }
+
+
+/* 970px */
 
 @media all and (min-width: 970px) {
 
@@ -144,9 +210,24 @@ nav ul {
 }
 
 
+/* 1020px*/
 
+@media all and (min-width: 1020px) {
 
+	#hero button {
+		display: block;
+		position: absolute;
+		top: 50%;
+	}
 
+	#prev {
+		left: 0;
+	}
+
+	#next {
+		right: 0;
+	}
+}
 
 
 
