@@ -1,5 +1,101 @@
-/*body {
-	background-color: red; 
-}	*/
+body {
+	margin: 0;
+}
 
-/*Comment goes here*/
+nav {
+	background-color: #69a41e;
+}
+
+nav div {
+	background-color: #77ba22;
+	max-width: 1346px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#hamburger {
+	float: right;
+	margin-top: 15px;
+}
+
+nav ul {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 720px) {
+
+	nav ul {
+		display: block;
+		margin: 0;
+	}
+
+	#hamburger {
+		display: none;
+	}
+
+	nav img {
+		float: left;
+	}
+
+	nav li {
+		display: inline-block;
+		line-height: 50px;
+		padding: 0 10px;
+	}
+
+	nav ul:nth-of-type(1) {
+		float: left;
+	} 
+		
+	nav ul:nth-of-type(2) {
+		float: right;
+	}
+
+	nav div:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	nav a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	nav a span {
+		display: none;
+	}	
+
+}
+
+@media all and (min-width: 970px) {
+
+	nav a span {
+		display: inline;
+	}
+
+	nav li {
+		padding: 0 15px 
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
