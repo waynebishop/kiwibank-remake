@@ -136,7 +136,7 @@ nav ul {
 	text-align: left;
 }
 
-.percentage span {
+.percentage > span {
 	text-transform: uppercase;
 	background-color: #dfdfdf;
 	padding: 6px;
@@ -149,11 +149,33 @@ span.limited {
 	color: #ffffff;
 }
 
+.percentage p {
+	font-size: 64px;
+	font-weight: bold;
+	margin: 10px 0;
+	padding-left: 10px;
+}
 
+.percentage p span {
+	font-size: 32px;
+	position: relative;
 
+}
 
+.percentage p span:first-child {
+	bottom: 22px;
+} 
 
+.percentage p span:last-child {
+	right: 28px;
+} 
 
+.percentage ul {
+	list-style: none;
+	color: #888888;
+	padding-left: 10px;
+
+}
 
 
 
