@@ -179,6 +179,29 @@ span.limited {
 
 }
 
+#promos h1 {
+	font-size: 20px;
+}
+
+#promos a {
+	text-decoration: none;
+	color: #25a5ca;
+	/*display: inline-block;
+	padding: 5px;*/
+}
+
+#promos span {
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+.promo-bits {
+	padding: 10px;
+
+}
+
+
 
 
 
