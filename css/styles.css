@@ -183,6 +183,7 @@ span.limited {
 	font-size: 20px;
 }
 
+.alert a,
 #promos a {
 	text-decoration: none;
 	color: #25a5ca;
@@ -196,11 +197,35 @@ span.limited {
 
 }
 
-.promo-bits {
+.promos-bits {
 	padding: 10px;
+	background-color: #eeeeee;
 
 }
 
+.promos-bits img {
+		display: none;
+} 
+
+.alert p {
+	font-weight: bold;
+}
+
+.alert {
+	padding: 20px;
+	background-color: #fff;
+	max-width: 1346px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#testimonials {
+	/*display: none;*/
+	max-width: 1346px;
+	margin: 0 auto;
+	background-color: red;
+}
 
 
 
@@ -220,7 +245,58 @@ span.limited {
 		width: 500px;
 		margin: 0 auto;
 
-	} 
+	}
+
+	.promos-bits {
+		box-sizing: border-box;
+		float: left;
+		width: 50%;
+		height: 200px;
+	}
+
+	#testimonials:after,
+	#promos:after,
+	.endorsement:after	 {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	#testimonials h1,
+	#testimonials p {
+		text-align: center;
+		
+	}
+
+	.endorsement {
+		width: 50%;
+		background-color: blue;
+		/*box-sizing: border-box;*/
+		float: left;
+	}
+
+	#endorsement-1 p,
+	#endorsement-2 p {
+		background-color: yellow;
+
+	}
+
+	#endorsement-1 {
+		float: right;
+		width: 250px;
+		margin-right: 15px;
+		
+	}
+
+	#endorsement-2 {
+		float: left;
+		width: 250px;
+		margin-left: 15px;
+	}
+
+	#endorsement-2 span	{
+		padding-left: 30px;
+	}
 }
 
 
@@ -356,6 +432,27 @@ span.limited {
 	nav li {
 		padding: 0 15px 
 	}
+
+	.promos-bits {
+		position: relative;
+		padding-left: 150px;
+
+	}
+
+	.promos-bits img {
+		display: inline-block;
+		position: absolute;
+		left: 30px;
+		top: 30px;
+	} 
+
+	#promos {
+		max-width: 1346px;
+		margin: 0 auto;
+	}
+
+
+
 
 }
 
